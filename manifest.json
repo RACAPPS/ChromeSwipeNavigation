@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Safari Navigation",
+	"version": "1.0",
+	"description": "Implements Safari-Like navigation via two fingers swipe.",
+	"author": "Rubén Aguado",
+	"icons": {
+		"16": "img/icon16.png",
+ 		"48": "img/icon48.png",
+		"128": "img/icon128.png"
+	},
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["js/wheeler.js"]
+	}]
+}
